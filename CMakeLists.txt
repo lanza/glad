@@ -33,7 +33,7 @@ if (CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
 else()
   option(GLAD_EXPORT "Set export variables for external project" ON)
 endif()
-option(GLAD_INSTALL "Generate installation target" OFF)
+option(GLAD_INSTALL "Generate installation target" ON)
 
 if(GLAD_GENERATOR STREQUAL "d")
   list(APPEND GLAD_SOURCES
